@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nossh Bank</title>
+    <link rel="stylesheet" href="mainpagecss.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <span class="brand">NosshBank</span>
+      <ul class="main-nav">
+        <li class="nav-link">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">Account</a>
+        </li>
+        <li class="nav-link">
+          <a href="#">About Us</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="title-section">
+        <h1 class="title-header">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters letters-left">NosshBank</span>
+            <span class="line line2"></span>
+          </span>
+        </h1>
+      </section>
+
+      <section class="hero-section">
+        <img src="background.jpg"></img>
+        <svg height="100%" width="100%">
+          <defs>
+            <mask id="mask" x="0" y="0" width="100%" height="100%" >
+              <rect x="0" y="0" width="100%" height="100%" />
+              <text x="50%" y="55%" text-anchor="middle">Welcome, Terence Lobo!</text>
+            </mask>
+          </defs>
+          <rect fill="black" x="0" y="0" width="100%" height="100%" />
+        </svg>
+      </section>
+
+      <section></section>
+
+      <div class="entry">
+        <div class="entry1">
+          <h1 style="padding-top: 4rem;">Unread Notifications</h1>
+        </br>
+          <button class="accordion">Credit Card Info.</button>
+          <div class="panel">
+          </br>
+            <p>New Credit Card offers are available!</p>
+          </br>
+          </div>
+          <button class="accordion">Investment Info.</button>
+          <div class="panel">
+          </br>
+          <p>NosshBank has released a new type of Equity funds!</p>
+          </br> 
+          </div>
+        </div>
+
+        <div class="entry2">
+        </br></br>
+          <section dir="rtl" class="article-section">
+            <div class="article-body" onclick="cardeets()">
+              <article class="article">
+                <div class="article-body">
+                  <h3>Debit Mastercard</h3>
+                  <p>
+                  Card Number : 1454 2047 </br>
+                  </p>
+                </div>
+              </article>   
+              <article class="article">
+                <div class="article-body">
+                  <h3>Credit Card</h3>
+                  <p>
+                  Card Number : 2041 1928 </br>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="entry3">
+        </br></br>
+          <section dir="rtl" class="article-section">
+            <div class="article-body" onclick="acctdeets()">
+              <article class="article">
+                <div class="article-body">
+                <h3>Savings Account</h3>
+                <p>
+                Account Number : 14545123 </br>
+                Branch Number : CHENNAI34 </br>
+                </p>
+                </div>
+              </article>   
+              <article class="article">
+                <div class="article-body">
+                <h3>Current Account</h3>
+                <p>
+                Account Number : 35143923 </br>
+                Branch Number : CHENNAI34 </br>
+                </p>
+                </div>
+              </article>   
+              <article class="article">
+                <div class="article-body">
+                  <h3>Investments</h3>
+                  <p>
+                    Mutual Funds </br>
+                    ELSS Funds   </br>
+                  </p> 
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+        <!-- <p style="line-height: 5rem;padding-left: 1rem;">
+          Spacing </br>
+        </p> -->
+
+      <div class="footer">
+        <div class="topf">
+          <div class="topleftf">
+            <div class="ticket">
+            <h2 style="padding-top: 10px;padding-bottom: 15x;">Status of Raised Queries</h2>
+            <label for="city">Ticket Category</label></br>
+            <select class="textback" id="city" name="city" style="width: 300px;">
+              <option value="" selected disabled hidden>Choose here</option>
+              <option value="deb">Debit or Credit Card Issue</option>
+              <option value="net">Net Banking Issue</option>
+              <option value="acc">Account Statement Issue</option>
+            </select>
+            </br>
+            <label for="name" >Ticket Number</label></br>
+            <input class= "textback" type="text" id="fname"  placeholder="Enter ticket number.." style="width: 300px;">
+            </br>
+            <div id="myTick" style="display: none;">
+              The issue is currently being resolved.
+            </div>
+            <input class="submit" type="submit" value="Submit" onclick="displayticket()">
+          </div>
+        </br><hr></br>
+          
+          <div class="toprightf" style="align-content: center;">
+            <h2 style="padding-top: 10px;padding-bottom: 15x;">Feedback Forms</h2>
+            <label for="submit" style="padding-top: 20px;padding-bottom: 15x;">Click here to fill the feedback form</label></br>
+            <input class="submit" type="submit" value="Submit" onclick="setTimeout(feedback,600)" style="padding-top: 10px;">  
+          </div> 
+        </div>
+      </div>
+      </br><hr></br>
+        <!-- ___________________________ -->
+        <h2 class="footer-title">HEAD OFFICE</h2>
+        <p class="address">
+          <i class="fas">&#xf2bb;</i>
+          <span> : Chennai Sipcot, 603103</span>
+        </p>
+        <p class="phone">
+          <i class="fas">&#xf3cd;</i>
+          <span> : +91 9867313422</span>
+        </p>
+        <p class="email">
+         <i class="fas">&#xf0e0;</i>
+         <span> : headoffice@nossh.com</span>	
+       </p>
+     </div>
+
+    </main>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>   
+    <script src="animation.js"></script>
+    <script src="mainpagejavas.js"></script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+      <script>
+      function displayticket() {
+        alert("Description of Query will be shown to the user");
+     }
+    </script>
+    <script>
+      function feedback() {
+          window.location = "feedback.html";
+      }
+    </script>
+      <script>
+        function cardeets() {
+          alert("Card transactions and Details pertaining to the respective cards will be shown to the user");
+        }
+        </script>
+        <script>
+          function acctdeets() {
+            alert("Account transactions and Details pertaining to the respective accounts will be shown to the user");
+          }
+          </script>
+  </body>
+</html>

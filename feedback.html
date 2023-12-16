@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    padding-top: 3rem;
+    background-color:  white
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.column {
+  margin-top: 6px;
+  padding: 20px;
+  font-style: oblique;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  line-height: 30px;
+  border-style: groove;
+}
+
+.column1 {
+  flex: 50%;
+  padding: 20px;
+}
+
+.column2 {
+  flex: 50%;
+  padding: 20px;
+  bottom: 0;
+}
+.textback {
+    background-color: #f2f2f2;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>Feedback Form</h1>
+    <h3>Tell us about your experience with us!</h3>
+  </div>
+
+  <div class="row">
+    <div class="column1">
+        <label for="name">Name</label>
+        <input class= "textback" type="text" id="fname"  placeholder="Your name..">
+        <label for="pno">Phone Number</label>
+        <input class= "textback" type="text" id="fname"  placeholder="Your phone number..">
+        <label for="state">City</label>
+        <select class="textback" id="city" name="city" >
+          <option value="" selected disabled hidden>Choose here</option>
+          <option value="che">Chennai</option>
+          <option value="hyd">Hyderabad</option>
+          <option value="del">Delhi</option>
+          <option value="mum">Mumbai</option>
+        </select>
+    </div>
+    <div class="column2">   
+        <label for="subject">Description</label>
+        <textarea class="textback" id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <!-- <input class="submit" type="submit" value="Submit" onClick="window.location.reload()"> -->
+        <input id="myBtn" type="submit" onclick="setTimeout(myFunction,1000)">
+    </div>
+  </div>
+</div>
+<script>
+function myFunction() {
+    alert("Thank you for the feedback!");
+    window.location = "mainpage.html";
+}
+</script>
+</body>
+</html>
